@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 
 import com.bujolandia.ipaapp2.R
 import com.bujolandia.ipaapp2.view.consonants.ConsonantsFragment
+import com.bujolandia.ipaapp2.view.developer.DeveloperFragment
 import com.bujolandia.ipaapp2.view.diphthongs.DiphthongsFragment
 import com.bujolandia.ipaapp2.view.vowels.VowelsFragment
 
@@ -28,6 +29,7 @@ class HomeFragment : Fragment() {
         val btnVowels = view.findViewById<Button>(R.id.btnVowels)
         val btnConsonants = view.findViewById<Button>(R.id.btnConsonants)
         val btnDiphthongs = view.findViewById<Button>(R.id.btnDiphthongs)
+        val btnDev= view.findViewById<Button>(R.id.btnDev)
 
         btnVowels.setOnClickListener {
             openFragment(VowelsFragment())
@@ -39,6 +41,10 @@ class HomeFragment : Fragment() {
 
         btnDiphthongs.setOnClickListener {
             openFragment(DiphthongsFragment())
+        }
+        /*pantalla dev bujolandia*/
+        btnDev.setOnClickListener {
+            openFragment(DeveloperFragment())
         }
     }
 

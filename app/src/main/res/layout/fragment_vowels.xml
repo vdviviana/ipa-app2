@@ -13,13 +13,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:columnCount="3"
-        android:rowCount="4"
+        android:rowCount="5"
         app:layout_constraintTop_toBottomOf="@id/btnVolver"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <Button
+            android:id="@+id/btnvocal1"
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:backgroundTint="#F4F0F0"
@@ -28,6 +29,7 @@
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal2"
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:backgroundTint="#F4F0F0"
@@ -36,6 +38,7 @@
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal3"
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:backgroundTint="#F4F0F0"
@@ -44,83 +47,105 @@
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal4"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="#F4F0F0"
             android:text="ɛ"
             android:textAllCaps="false"
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal5"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="#F4F0F0"
             android:text="iː"
             android:textAllCaps="false"
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal6"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="#F4F0F0"
             android:text="ə"
             android:textAllCaps="false"
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal7"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="#F4F0F0"
             android:text="ʌ"
             android:textAllCaps="false"
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal8"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="#F4F0F0"
             android:text="ɑː"
             android:textAllCaps="false"
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal9"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="#F4F0F0"
             android:text="ɒ"
             android:textAllCaps="false"
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal10"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="#F4F0F0"
             android:text="ʊ"
             android:textAllCaps="false"
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal11"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="#F4F0F0"
             android:text="ɔː"
             android:textAllCaps="false"
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/btnvocal12"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="#F4F0F0"
             android:text="uː"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnInfoVowels"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#2196F3"
+            android:rotation="-9"
+            android:rotationX="2"
+            android:rotationY="26"
+            android:text="INFO"
             android:textAllCaps="false"
             android:textSize="24sp" />
 
@@ -146,7 +171,7 @@
         android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

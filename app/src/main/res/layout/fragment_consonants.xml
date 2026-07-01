@@ -3,110 +3,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FBCEDB">
-
-    <GridLayout
-        android:id="@+id/gridVowels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:columnCount="3"
-        android:rowCount="4"
-        app:layout_constraintTop_toBottomOf="@id/btnVolver"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="ð"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="θ"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="v"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="z"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="ʃ"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="ŋ"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="h"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="tʃ"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="dʒ"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#F4F0F0"
-            android:text="j"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-    </GridLayout>
 
     <ImageView
         android:id="@+id/imgHeaderCircle"
@@ -114,21 +13,20 @@
         android:layout_height="160dp"
         android:scaleType="fitXY"
         android:src="@drawable/ellipse_4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="2dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtIpa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:text="IPA"
+        android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -136,11 +34,11 @@
         android:id="@+id/txtSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="(INTERNATIONAL&#10;PHONETIC ALPHABET)"
-        android:textSize="13sp"
-        android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/txtIpa"
         android:layout_marginTop="8dp"
+        android:text="(INTERNATIONAL&#10;PHONETIC ALPHABET)"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/txtIpa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -152,10 +50,9 @@
         android:text="CONSONANTS"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toBottomOf="@id/imgHeaderCircle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgHeaderCircle" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnVolver"
@@ -163,9 +60,128 @@
         android:layout_height="42dp"
         android:layout_marginTop="12dp"
         android:text="VOLVER"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintTop_toBottomOf="@id/txtConsonants"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtConsonants" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridConsonants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        app:layout_constraintTop_toBottomOf="@id/btnVolver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnconsonants1"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="ð"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnconsonants2"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="θ"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnconsonants3"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="v"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnconsonants4"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="z"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnconsonants5"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="ʃ"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnconsonants6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="ŋ"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnconsonants7"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="h"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnconsonants8"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="tʃ"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnconsonants9"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="dʒ"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnconsonants10"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#F4F0F0"
+            android:text="j"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnInfoConsonants"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#2196F3"
+            android:text="INFO"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

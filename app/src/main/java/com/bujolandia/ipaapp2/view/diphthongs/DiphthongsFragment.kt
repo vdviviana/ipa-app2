@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 
 import com.bujolandia.ipaapp2.R
 import com.bujolandia.ipaapp2.view.home.HomeFragment
+import com.bujolandia.ipaapp2.view.info_consonants.InfoConsonantsFragment
+import com.bujolandia.ipaapp2.view.info_diphthongs.InfoDiphthongsFragment
 
 class DiphthongsFragment : Fragment() {
 
@@ -22,11 +24,15 @@ class DiphthongsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        /*vuelve a home*/
         val btnVolver = view.findViewById<Button>(R.id.btnVolver)
-
         btnVolver.setOnClickListener {
             openFragment(HomeFragment())
+        }
+        /*navega a info*/
+        val btnInfoDiphthongs= view.findViewById<Button>(R.id.btnInfoDiphthongs)
+        btnInfoDiphthongs.setOnClickListener {
+            openFragment(InfoDiphthongsFragment())
         }
     }
 

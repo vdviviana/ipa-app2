@@ -62,6 +62,18 @@
             android:text="ɔɪ"
             android:textAllCaps="false"
             android:textSize="24sp" />
+        <Button
+            android:id="@+id/btnInfoDiphthongs"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#2196F3"
+            android:rotation="-9"
+            android:rotationX="2"
+            android:rotationY="26"
+            android:text="INFO"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
 
     </GridLayout>
 
@@ -85,7 +97,7 @@
         android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

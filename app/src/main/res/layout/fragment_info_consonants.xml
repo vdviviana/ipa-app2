@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBCEDB">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:fillViewport="true"
+        android:scrollbars="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btnVolver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:id="@+id/verticalScrollInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:layout_width="820dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <TextView android:text="IPA" android:textStyle="bold" android:padding="8dp" />
+                    <TextView android:text="Descripción mecánica y truco" android:textStyle="bold" android:padding="8dp" />
+                    <TextView android:text="Ejemplos" android:textStyle="bold" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="ð" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="TH sonora. Lengua entre los dientes. Raspa el aire y vibra como abeja. Como la d suave de todo." android:padding="8dp" />
+                    <TextView android:text="Then, the, they, with" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="θ" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="TH sorda. Lengua entre los dientes y solo soplas aire, sin vibrar. Como la Z de España en zapato." android:padding="8dp" />
+                    <TextView android:text="Belgarath, forth, three" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="v" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="Dientes superiores tocan labio inferior. Muerdes suave. Tiene que vibrar, no es una B española." android:padding="8dp" />
+                    <TextView android:text="Give, reclaimed, drove" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="z" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="Pon boca de S pero haz que vibre fuerte la garganta, como un zumbido eléctrico." android:padding="8dp" />
+                    <TextView android:text="Resisted, his, sons, Alorns" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="ʃ" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="Sonido sh para hacer callar a alguien: shhh." android:padding="8dp" />
+                    <TextView android:text="Precious, she, ship" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="ŋ" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="Sonido nasal. Punta de lengua abajo. La parte de atrás tapa la garganta, como al decir mángo." android:padding="8dp" />
+                    <TextView android:text="Seeking, king, burning" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="h" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="Aire soplado suave. Como un suspiro o cuando empañas un vidrio. No es una J fuerte." android:padding="8dp" />
+                    <TextView android:text="Him, he, his" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="tʃ" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="Idéntica a nuestra CH española de chico." android:padding="8dp" />
+                    <TextView android:text="Choice, each" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="dʒ" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="Posición de CH pero con vibración en la garganta. Fuerte y marcada." android:padding="8dp" />
+                    <TextView android:text="Magic, just, journey" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="j" android:textSize="20sp" android:padding="8dp" />
+                    <TextView android:text="No es una J. Suena como una i rápida que se une a otra vocal, como en ya." android:padding="8dp" />
+                    <TextView android:text="Dominion (-nyan), you" android:padding="8dp" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imgHeaderCircle"
+        android:layout_width="430dp"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IPA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(INTERNATIONAL&#10;PHONETIC ALPHABET)"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/txtIpa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInfoConsonants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="INFO CONSONANTS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgHeaderCircle" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="88dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:text="VOLVER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtInfoConsonants" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBCEDB">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/btnVolver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:id="@+id/verticalScrollInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:layout_width="900dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:stretchColumns="2">
+
+                <!-- acá van tus TableRow -->
+
+            <TableRow>
+                <TextView android:text="IPA" android:textStyle="bold" android:padding="6dp" />
+                <TextView android:text="Tipo" android:textStyle="bold" android:padding="6dp" />
+                <TextView android:text="Descripción" android:textStyle="bold" android:padding="6dp" />
+                <TextView android:text="Ejemplos" android:textStyle="bold" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="6dp"
+                    android:text="æ"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:padding="6dp"
+                    android:text="Corta / Abierta" />
+
+                <TextView
+                    android:padding="6dp"
+                    android:text="Sonido intermedio entre la 'a' y la 'e'. Abre la boca 'a' los lados." />
+
+                <TextView
+                    android:padding="6dp"
+                    android:text="Aldur, wrath, back" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="iː" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Larga / Tensa" android:padding="6dp" />
+                <TextView android:text="'i' larga. Estira los labios hacia los lados. Los puntos ː significan alargar." android:padding="6dp" />
+                <TextView android:text="Seeking, three, he" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="ɪ" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Corta / Relajada" android:padding="6dp" />
+                <TextView android:text="'i' 'corta. Boca floja en posición de 'e', pero dices 'i'. Muy rápida y opaca." android:padding="6dp" />
+                <TextView android:text="Its, him, resisted, give" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="ɛ" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Corta / Limpia" android:padding="6dp" />
+                <TextView android:text="La 'e' limpia española. Como la 'e' de perro 'o' mesa." android:padding="6dp" />
+                <TextView android:text="Fled, repelled, then" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="ɜː" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Larga / Profunda" android:padding="6dp" />
+                <TextView android:text="Sonido neutro y largo. Como el schwa pero estirado." android:padding="6dp" />
+                <TextView android:text="Burning, word, bird" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="ə" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Corta / Neutra" android:padding="6dp" />
+                <TextView android:text="Schwa. Una 'e' muy débil, como un suspiro." android:padding="6dp" />
+                <TextView android:text="Dominion, upon, of, a" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="ʌ" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Corta / Relajada" android:padding="6dp" />
+                <TextView android:text="Vocal de la sorpresa. Una 'a' corta y floja." android:padding="6dp" />
+                <TextView android:text="Up, but, sons" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="ɑː" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Larga / Abierta" android:padding="6dp" />
+                <TextView android:text="La a del dentista. Boca grande, profunda y atrás." android:padding="6dp" />
+                <TextView android:text="Father, dark, car" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="ɒ" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Corta / Abierta" android:padding="6dp" />
+                <TextView android:text="'o' corta y abierta. Como 'a', pero con labios redondeados." android:padding="6dp" />
+                <TextView android:text="God, upon, not, was" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="ɔː" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Larga / Abierta" android:padding="6dp" />
+                <TextView android:text="'o' larga y profunda. Boca abierta con forma de 'o'." android:padding="6dp" />
+                <TextView android:text="Orb, forth, sought" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="ʊ" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Corta / Relajada" android:padding="6dp" />
+                <TextView android:text="'u' corta. Boca floja intentando emitir una 'u'." android:padding="6dp" />
+                <TextView android:text="Aldur, would, dreadful" android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="uː" android:textSize="20sp" android:padding="6dp" />
+                <TextView android:text="Larga / Tensa" android:padding="6dp" />
+                <TextView android:text="'u' larga y tensa. Como nuestra 'u', pero sostenida." android:padding="6dp" />
+                <TextView android:text="Pursue, to, precious to..." android:padding="6dp" />
+            </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imgHeaderCircle"
+        android:layout_width="430dp"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IPA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(INTERNATIONAL&#10;PHONETIC ALPHABET)"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/txtIpa"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInfoVowels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="INFO VOWELS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgHeaderCircle" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="88dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:text="VOLVER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtInfoVowels" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBCEDB">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/btnVolver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:id="@+id/verticalScrollInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:layout_width="850dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <TextView
+                        android:text="Símbolo"
+                        android:textStyle="bold"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Descripción Mecánica y Truco"
+                        android:textStyle="bold"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Ejemplos"
+                        android:textStyle="bold"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="eɪ"
+                        android:textSize="20sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Empieza en una 'e' limpia y se desliza hacia una 'i' corta. Suena como cuando dices ¡Ey! para llamar a un amigo."
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Maimed, reclaimed, they"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="oʊ\n(əʊ)"
+                        android:textSize="20sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="No es una 'o' seca. Empieza en 'o' y se cierra en 'u' sutilmente. Como cuando entiendes algo: ¡Oh, ya veo!."
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Drove, old, so"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="aɪ"
+                        android:textSize="20sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Empieza en 'a' y va hacia la 'i'. Como cuando te pinchas un dedo: ¡Ay!."
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Fire, iron, disciple"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="aʊ"
+                        android:textSize="20sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Empieza en 'a' y va hacia la 'u'. Como nuestro ¡Au!."
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Tower, out, power"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="ɔɪ"
+                        android:textSize="20sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Empieza en una 'o' abierta y va hacia la 'i'. Como el inicio de oiga."
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:text="Voice, boy, choice"
+                        android:padding="8dp" />
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imgHeaderCircle"
+        android:layout_width="430dp"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IPA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(INTERNATIONAL&#10;PHONETIC ALPHABET)"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/txtIpa"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInfoDiphthongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="INFO DIPHTHONGS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgHeaderCircle" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="88dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:text="VOLVER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtInfoDiphthongs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

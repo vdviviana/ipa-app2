@@ -1,38 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp">
+    android:background="#FBCEDB">
+
+    <ImageView
+        android:id="@+id/imgHeaderCircle"
+        android:layout_width="430dp"
+        android:layout_height="220dp"
+        android:src="@drawable/ellipse_4"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtTitulo"
+        android:id="@+id/txtIpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IPA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(INTERNATIONAL&#10;PHONETIC ALPHABET)"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/txtIpa"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HOME"
         android:textSize="28sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imgHeaderCircle"
+        android:layout_marginTop="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <Button
         android:id="@+id/btnVowels"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Vowels" />
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:text="VOWELS"
+        app:layout_constraintTop_toBottomOf="@id/txtHome"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnConsonants"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Consonants" />
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:text="CONSONANTS"
+        app:layout_constraintTop_toBottomOf="@id/btnVowels"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnDiphthongs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Diphthongs" />
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:text="DIPHTHONGS"
+        app:layout_constraintTop_toBottomOf="@id/btnConsonants"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
